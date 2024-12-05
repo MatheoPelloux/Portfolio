@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+  
+
+.videoHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.5%, -50%);
+    width: 100vw; /* Toujours la largeur de l'écran */
+    height: 100vh; /* Toujours la hauteur de l'écran */
+    object-fit: cover; /* Coupe ou étire la vidéo pour remplir sans déformation */
+}
+
+div {
+    height: 1000px;
+}
