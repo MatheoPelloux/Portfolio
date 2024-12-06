@@ -1,22 +1,74 @@
+@font-face {
+    font-family: "Roboto_Regular";
+    src: url(./src/fonts/Roboto-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
-    height: 100%;
+    font-family: 'Roboto_Regular', 'Courier New', Courier, monospace;
 }
 
+body {
+    overflow: hidden; /* Supprimer la barre de scroll */
+}
 
-  
+header {
+    display: flex;
+    align-items: end;
+    height: 100vh;
+}
 
-.videoHeader {
+.videoHeader {  
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50.5%, -50%);
+    transform: translate(-50%, -50%);
     width: 100vw; /* Toujours la largeur de l'écran */
     height: 100vh; /* Toujours la hauteur de l'écran */
     object-fit: cover; /* Coupe ou étire la vidéo pour remplir sans déformation */
+    z-index: -5;
 }
 
-div {
-    height: 1000px;
+/* HEADER TITRE */
+.divHeaderTitre {
+    color: white;
+    text-align: center;
+    max-width: 90%;
+    margin: 35vh auto auto auto;
+}
+
+.h1HeaderPrenomNom {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.pHeaderBvn {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+/* FLECHE */
+.divHeaderFlecheBlanche {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.imgHeaderFlecheBlanche {
+    height: clamp(50px, 10vw, 100px);
+    animation: annimationFleche 2s infinite;
+}
+
+@keyframes annimationFleche {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
