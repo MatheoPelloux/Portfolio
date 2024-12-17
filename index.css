@@ -7,10 +7,20 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto_Regular', 'Courier New', Courier, monospace;
+    scrollbar-width: none; /* Pas de scroll pour farifox */
+    -ms-overflow-style: none; /* Pas de scroll pour edge */
+}
+
+/* Pas de scroll pour chromium et safari */
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
-    overflow: hidden; /* Supprimer la barre de scroll */
+    /* overflow: hidden; Supprimer la barre de scroll */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -71,4 +81,261 @@ header {
     100% {
         transform: translateY(0);
     }
+}
+
+.h2DivAproposTitre {
+    margin: 10vh 0 0 5vw;
+    font-size: clamp(1.25rem, 4vw, 2.25rem);
+    color: #a81a1a;
+}
+
+.divPresentation {
+    display: flex;
+    margin-top: 10vh;
+}
+
+.imgDivPresentation {
+    margin: 0 5vw 0 15vw;
+    height: 300px;
+    width: 300px;
+    border-radius: 1000px;
+}
+
+.h3DivPresentation {
+    color: #137b1a;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.P3DivPresentation {
+    margin-bottom: 25vh;
+}
+
+.spanDivPresentationLumineu {
+    text-shadow: 
+      0 0 10px #1576ff;
+}
+
+/* Bouger Emoji */
+/* .spanDivPresentationEmoji {
+    animation: bougerMain 2s infinite;
+}
+
+@keyframes bougerMain {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(50, 60);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+.divCompetenceLogiciel {
+    background-color: #f0f5fb;
+    padding-bottom: 5vh;
+}
+
+.h2DivCompetenceLogiciel {
+    padding: 10vh 0 0 5vw;
+    font-size: clamp(1.25rem, 4vw, 2.25rem);
+    color: #c18428;
+}
+
+/* cv */
+
+.h2CV {
+    padding: 10vh 0 0 5vw;
+    color: #c18428;
+}
+
+.contener1 {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0 5vh 0;
+    overflow: hidden;
+}
+@media only screen and (min-width: 100px) {
+    .contener1 > h3 {
+        font-size: small;
+    }
+}
+
+.gauche {
+    background-color: #007d8b;
+}
+
+.droite {
+    background-color: white;
+}
+
+.divCenterGauche {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2R {
+    font-size: 3vh;
+    color: white;
+    margin: 0 1vw 0 1vw;
+    border-top: 2px solid #064850;
+}
+
+.ul1 > li {
+    color: white;
+    margin: 1vh 0 1vh 3vh;
+    justify-content: center;
+}
+
+.gauche {
+    border-radius: 2vh 0 0 2vh;
+}
+
+.droite {
+    border-radius: 0 2vh 2vh 0;
+}
+
+.divDroite > h2 > span {
+    color: #007d8b;
+}
+
+.divDroite > h2 {
+    margin: 2vh 0 1vh;
+}
+
+.divDroite {
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.divDroite > p > span {
+    margin-right: 1vw;
+}
+
+.grasSouligne {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.bleu {
+    border-top: 2px solid #007d8b;
+    color: #007d8b;
+}
+
+.taille {
+    margin-right: 2vw;
+}
+
+.divTete {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.imgTeteMatheo {
+    width: 10vh;
+    border-radius: 20vh;
+    margin-bottom: 2vh;
+}
+
+/* Rapport d'alternance */
+.h2Padding {
+    padding: 10vh 0 0 5vw;
+}
+
+/* Attestation d'alternance */
+.divAttestation {
+    background-color: #f0f5fb;
+    padding-bottom: 5vh;
+}
+
+/* Tableau de synthèse */
+.divImg {
+    display: flex;
+    justify-content: center;
+}
+
+.imgTableau {
+    margin: 5vh 0 5vh 0;
+}
+
+/* Projet/Experiance */
+.divProjetExpe {
+    background-color: #f0f5fb;
+    padding-bottom: 5vh;
+}
+
+.divProjet {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.divProjetVignette {
+    margin: 5vh 5vw 5vh 5vw;
+    background-color: white;
+    padding: 10vh 2vw 10vh 2vw;
+    border-radius: 5vh;
+    transition: transform 0.2s ease;
+    border: 2px solid black;
+}
+
+.divProjetVignette:hover {
+    transform: translateY(-5px);
+}
+
+/* Veille technologique */
+.divVeille {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 10vh;
+    padding-top: 10vh;
+
+}
+
+/* Certification */
+.divCertification {
+    background-color: #f0f5fb;
+    padding-bottom: 5vh;
+}
+
+.spanspan {
+    color: #f0f5fb;
+    font-family: "Roboto_Regular";
+}
+
+.divPDF {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.iframed {
+    margin: 5vh 0 5vh 0;
+}
+
+/* Contact UwU */
+.divContact {
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    width: 500px;
+    margin: 5vh auto;
+    margin-bottom: 30vh;
+}
+
+.imgPort {
+    height: 15vh;
+    border-radius: 2vh;
+    border: 2px solid black;
 }
