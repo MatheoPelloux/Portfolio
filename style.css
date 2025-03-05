@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Nasalization";
+  src: url(./src/font/Nasalization\ Rg.otf);
+}
+
+@font-face {
+  font-family: "Space";
+  src: url(./src/font/SPACE.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 500vh;
+  background: linear-gradient(to bottom, #000 15%, #1f69d8 100%);
+}
+
+h1, h2 {
+  font-family: "Nasalization", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-family: "Courier", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stars {
+  height: inherit;
+  background: url(./src/img/stardust.png);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.title {
+  color: white;
+  opacity: 0.3;
+  font-size: 5rem;
+  z-index: 2;
+}
+
+.h1-pelloux {
+  padding: 40vh 0 0 96px;
+}
+
+.h1-matheo {
+  transform: translate(482px, -101px);
+}
+
+.div-title_rule {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 100px;
+  padding-right: 50px;
+  /* border: 4px solid red ; */
+}
+
+.txt-rule {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.div-presentation {
+  color: white;
+  margin-top: 30vh;
+}
+
+.div-div-presentation {
+  padding-left: 10vw;
+}
+
+.h2-presentation {
+  font-size: 3.5rem;
+  padding-bottom: 1.5vh;
+}
+
+.p-presentation {
+  font-size: 1.2em;
+}
+
+.a-presentation  {
+  color: white;
+
+}
+
+.div-bouton-presentation {
+  padding-top: 2.5vh;
+}
+
+.bouton-presentation {
+  padding: 15px 20px 15px 20px;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(0, 108, 196);
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.bouton-presentation:hover {
+  box-shadow:
+    0 0 5px rgb(0, 81, 148),
+    0 0 15px rgb(0, 81, 148),
+    0 0 30px rgb(0, 81, 148),
+    0 0 40px rgb(0, 81, 148)
+    ;
+}
+
+.a-bouton-1 {
+  font-family: "Nasalization", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.img-bouton-1 {
+  height: 2vh;
+}
