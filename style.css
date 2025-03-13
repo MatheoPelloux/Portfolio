@@ -118,3 +118,8 @@ p {
 .img-bouton-1 {
   height: 2vh;
 }
+
+.img-miniature {
+  height: 15vh;
+  width: auto;
+}
